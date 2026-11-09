@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Experiment data and generated outputs
+outputs/
+datasets/
+weights/
+logs/
+*.log
+*.mp4
+*.avi
+*.npy
+*.npz
+
+# External dependencies (installed separately)
+third_party/
+
+# Local tools and settings
+.vscode/
+.idea/
+.DS_Store
+.env
