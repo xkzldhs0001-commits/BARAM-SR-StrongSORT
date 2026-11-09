@@ -6,7 +6,7 @@ Research project exploring whether unnecessary OSNet appearance-feature extracti
 
 ## Source version: important distinction
 
-- **Published now:** \`baram/\`, \`scripts/\`, \`tests/\` from a recovered **October 2026 source snapshot**, plus documentation and benchmark summaries.
+- **Published now:** `baram/`, `scripts/`, `tests/` from a recovered **October 2026 source snapshot**, plus documentation and benchmark summaries.
 - **Still to be uploaded from the tested Ubuntu working directory:** YOLO26x / **V4.3 live** sources, benchmark workers, runtime-profiler workers.
 - The archived source **does not reproduce the later V4.3 results by itself**. See [CODE_STATUS.md](CODE_STATUS.md).
 
@@ -57,24 +57,24 @@ Selective OSNet reduced Re-ID stage latency by approximately **36.2% (MOT17)** a
 
 ## Directory guide
 
-- \`baram/\` — archived tracker, appearance extraction, association pipeline.
-- \`scripts/\` — archived evaluation, diagnostic and visualization utilities.
-- \`tests/\` — regression/unit tests for the archived source.
-- \`experiments/\` — CSV comparisons and provenance notes.
+- `baram/` — archived tracker, appearance extraction, association pipeline.
+- `scripts/` — archived evaluation, diagnostic and visualization utilities.
+- `tests/` — regression/unit tests for the archived source.
+- `experiments/` — CSV comparisons and provenance notes.
 - [PROJECT_REPORT_KO.md](PROJECT_REPORT_KO.md) — Korean research background, methods, results and limitations.
 - [CODE_STATUS.md](CODE_STATUS.md) — exact revision and reproducibility status.
 
 ## Archived snapshot setup
 
-\`\`\`bash
+```bash
 bash scripts/setup_ubuntu.sh
 source .venv/bin/activate
 source scripts/env.sh
 python -m unittest discover -s tests -v
-\`\`\`
+```
 
 The setup depends on separately installed upstream repositories, dataset files, and model checkpoints. The current live V4.3 runtime is **not yet covered** by the archived checkout.
 
 ## Data, weights and licenses
 
-MOT images/labels, videos, exported results, checkpoints such as \`yolo26x.pt\` and \`osnet_x1_0.pth.tar\`, virtual environments and secrets are intentionally excluded. The project integrates third-party StrongSORT/OSNet/YOLO and TrackEval; their individual licenses and attribution requirements still apply.
+MOT images/labels, videos, exported results, checkpoints such as `yolo26x.pt` and `osnet_x1_0.pth.tar`, virtual environments and secrets are intentionally excluded. The project integrates third-party StrongSORT/OSNet/YOLO and TrackEval; their individual licenses and attribution requirements still apply.
