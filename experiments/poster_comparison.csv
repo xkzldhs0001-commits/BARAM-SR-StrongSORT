@@ -1,0 +1,5 @@
+dataset,method,hota,idf1,mota,idsw,fps,reid_extractions,peak_vram_mib,source
+MOT17,StrongSORT,39.74,45.83,32.67,243,16.98,47881,822,poster_comparison_20261107
+MOT17,SR-StrongSORT,37.12,43.02,31.75,359,17.54,27865,766,poster_comparison_20261107
+MOT20,StrongSORT,10.38,7.67,4.33,232,17.24,59283,1034,poster_comparison_20261107
+MOT20,SR-StrongSORT,12.95,11.17,7.99,381,18.03,29478,872,poster_comparison_20261107

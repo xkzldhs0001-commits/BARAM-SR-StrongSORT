@@ -1,0 +1,7 @@
+dataset,method,hota,idf1,mota,idsw,fps,reid_extractions,source,verification
+MOT17,v43,37.75,47.48,44.21,110,16.59,4214,shared_ablation_20261106,pending_original_zip
+MOT17,no_id_memory,33.95,39.80,48.52,139,17.89,3885,shared_ablation_20261106,pending_original_zip
+MOT17,no_live_relink,37.75,47.48,44.21,110,16.69,4214,shared_ablation_20261106,pending_original_zip
+MOT17,no_occlusion_rescue,41.13,54.67,41.58,71,17.04,4285,shared_ablation_20261106,pending_original_zip
+MOT20,v43,25.01,31.59,21.97,186,,,shared_ablation_20261106,pending_original_zip
+MOT20,no_occlusion_rescue,22.27,26.55,,168,,,shared_ablation_20261106,pending_original_zip

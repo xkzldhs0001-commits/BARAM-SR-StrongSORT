@@ -1,0 +1,7 @@
+dataset,method,fps,reid_extractions,peak_vram_mib,trackeval_status,source
+MOT17,baseline,17.56,47881,822,failed_seqmap_typeerror,console_log_20261106
+MOT17,v43_full,16.59,47881,822,failed_seqmap_typeerror,console_log_20261106
+MOT17,v43_selective,18.73,27865,766,failed_seqmap_typeerror,console_log_20261106
+MOT20,baseline,16.81,59283,1034,failed_seqmap_typeerror,console_log_20261106
+MOT20,v43_full,14.54,59283,1034,failed_seqmap_typeerror,console_log_20261106
+MOT20,v43_selective,16.31,29478,872,failed_seqmap_typeerror,console_log_20261106

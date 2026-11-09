@@ -1,0 +1,16 @@
+numpy>=1.24,<2.3
+scipy>=1.10
+scikit-learn>=1.3
+opencv-python>=4.8
+ultralytics>=8.4
+PyYAML>=6
+yacs
+termcolor
+tabulate
+faiss-cpu
+gdown
+matplotlib
+tqdm
+Pillow
+filterpy
+tensorboard
