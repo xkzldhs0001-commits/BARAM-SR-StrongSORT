@@ -2,16 +2,16 @@
 
 ## On GitHub
 
-The tracked \`baram/\`, \`scripts/\`, and \`tests/\` code files were recovered from a 2026-10-28 revision. Research summaries in \`experiments/\` and \`PROJECT_REPORT_KO.md\` reference **later YOLO26x and V4.3 selective Re-ID runs**. This older checkout alone is not a version-matched reproduction of those runs.
+The tracked `baram/`, `scripts/`, and `tests/` code files were recovered from a 2026-10-28 revision. Research summaries in `experiments/` and `PROJECT_REPORT_KO.md` reference **later YOLO26x and V4.3 selective Re-ID runs**. This older checkout alone is not a version-matched reproduction of those runs.
 
 ## Next integration: actual Ubuntu live source
 
 Working-directory names reported during experiments:
 
-- \`~/Downloads/BARAM_LIVE_YOLO26X_OCCLUSION_V4_1\`
-- \`~/Downloads/BARAM_SR_StrongSORT\`
+- `~/Downloads/BARAM_LIVE_YOLO26X_OCCLUSION_V4_1`
+- `~/Downloads/BARAM_SR_StrongSORT`
 
-Files of interest include \`run.sh\`, \`live.py\`, \`identity_memory.py\`, \`live_relink.py\`, \`occlusion_bridge.py\`, MOT comparison workers, \`baram_profile_worker_v43.py\`, \`run_baram_runtime_profile.py\`, and \`official_compare/strongsort_adapter.py\`.
+Files of interest include `run.sh`, `live.py`, `identity_memory.py`, `live_relink.py`, `occlusion_bridge.py`, MOT comparison workers, `baram_profile_worker_v43.py`, `run_baram_runtime_profile.py`, and `official_compare/strongsort_adapter.py`.
 
 Upload the selected **actual current local files**, not a presumed equivalently named old ZIP, to the **BARAM-SR-StrongSORT** repository. Never upload them to the unrelated Jackal project.
 
