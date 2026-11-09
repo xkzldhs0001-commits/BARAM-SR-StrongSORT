@@ -7,7 +7,7 @@ Research project exploring whether unnecessary OSNet appearance-feature extracti
 ## Source version: important distinction
 
 - **Published now:** `baram/`, `scripts/`, `tests/` from a recovered **October 2026 source snapshot**, plus documentation and benchmark summaries.
-- **Still to be uploaded from the tested Ubuntu working directory:** YOLO26x / **V4.3 live** sources, benchmark workers, runtime-profiler workers.
+- **Current live source:** selected YOLO26x / V4.3 files under [`live_yolo26x_v43/`](live_yolo26x_v43/); see its source manifest. Full environment and third-party dependencies remain external.
 - The archived source **does not reproduce the later V4.3 results by itself**. See [CODE_STATUS.md](CODE_STATUS.md).
 
 This repository is **independent from** the Jackal/Gazebo multi-human simulation project.
@@ -73,7 +73,7 @@ source scripts/env.sh
 python -m unittest discover -s tests -v
 ```
 
-The setup depends on separately installed upstream repositories, dataset files, and model checkpoints. The current live V4.3 runtime is **not yet covered** by the archived checkout.
+The setup depends on separately installed upstream repositories, dataset files, and model checkpoints. The live V4.3 source is under [`live_yolo26x_v43/`](live_yolo26x_v43/); it requires the original companion repository and external checkpoints.
 
 ## Data, weights and licenses
 

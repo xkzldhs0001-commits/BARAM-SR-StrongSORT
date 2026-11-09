@@ -4,7 +4,7 @@
 
 The tracked `baram/`, `scripts/`, and `tests/` code files were recovered from a 2026-10-28 revision. Research summaries in `experiments/` and `PROJECT_REPORT_KO.md` reference **later YOLO26x and V4.3 selective Re-ID runs**. This older checkout alone is not a version-matched reproduction of those runs.
 
-## Next integration: actual Ubuntu live source
+## Selected Ubuntu live source
 
 Working-directory names reported during experiments:
 
@@ -25,3 +25,7 @@ Upload the selected **actual current local files**, not a presumed equivalently 
 6. Reconcile differing historical FPS results before final scientific publication.
 
 The November 6 TrackEval execution produced an error due to a sequence-map argument type; the reported HOTA/IDF1/MOTA comparisons should be independently matched to successful TrackEval output before being claimed as reproducible results.
+
+## Source upload
+
+Selected code from the actively used Ubuntu working tree is under [`live_yolo26x_v43/`](live_yolo26x_v43/) with SHA-256 checksums in `SOURCE_MANIFEST.tsv`. Models, datasets, output logs and upstream third_party copies remain excluded. This does not by itself prove full experiment reproducibility.
