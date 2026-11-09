@@ -1,33 +1,27 @@
-# Source revision inventory
+# Code inventory and reproducibility status
 
-## Code currently included
+## On GitHub
 
-- `baram/*.py`, `scripts/*.py`/`*.sh`, `tests/*.py`: source files from the recovered 2026-10-28 SR-StrongSORT code snapshot.
-- `scripts/analyze_experiment_results.py`: tabular metric-comparison utility added separately; it does not alter the tracker.
-- The experiment results documented here belong to subsequent YOLO26x configurations and **cannot be used to claim that the older snapshot reproduces those scores**.
+The tracked \`baram/\`, \`scripts/\`, and \`tests/\` code files were recovered from a 2026-10-28 revision. Research summaries in \`experiments/\` and \`PROJECT_REPORT_KO.md\` reference **later YOLO26x and V4.3 selective Re-ID runs**. This older checkout alone is not a version-matched reproduction of those runs.
 
-## Later packages identified
+## Next integration: actual Ubuntu live source
 
-| Archive | Purpose | Original bytes |
-|---|---|---|
-| `BARAM_V4_3_VSCODE_CODE.zip` | V4.3 code package | Not accessible for source extraction |
-| `BARAM_V44_IDSW_GUARD_AB.zip` | V4.4 ID switch guard tests | Not accessible for source extraction |
-| `BARAM_V45_DIAGNOSTIC_ABLATION.zip` | V4.5 diagnostic ablation | Not accessible for source extraction |
-| `BARAM_LIVE_YOLO26X_OCCLUSION_V4_1.zip` | Live tracking and occlusion handling | Not accessible for source extraction |
-| `BARAM_SR_YOLO26X_STABLE_V6.zip` | Stable YOLO26x integration | Not accessible for source extraction |
-| `BARAM_YOLO26X_MOT17_MOT20_AB.zip` | Benchmark runner | Not accessible for source extraction |
-| `BARAM_MOT_SAME_FRAME_VIS.zip` | Matched-frame visualization | Not accessible for source extraction |
+Working-directory names reported during experiments:
 
-The archive records are present in the project file library, but source extraction is unavailable. **No file from these archives has been passed off as integrated original source.**
+- \`~/Downloads/BARAM_LIVE_YOLO26X_OCCLUSION_V4_1\`
+- \`~/Downloads/BARAM_SR_StrongSORT\`
 
-## Checklist for integrating a recovered revision
+Files of interest include \`run.sh\`, \`live.py\`, \`identity_memory.py\`, \`live_relink.py\`, \`occlusion_bridge.py\`, MOT comparison workers, \`baram_profile_worker_v43.py\`, \`run_baram_runtime_profile.py\`, and \`official_compare/strongsort_adapter.py\`.
 
-1. Verify the ZIP checksum and inspect its file list.
-2. Compare the revision with the prior code, one file at a time.
-3. Retain upstream dependency notices and avoid committing pretrained models, datasets, generated videos, or local secrets.
-4. Run syntax tests, unit tests, a short MOT sample, and a full version-matched TrackEval before changing the published benchmark claim.
-5. Record the exact checkpoint, dataset split, run command, FPS timing boundaries, and revision commit.
+Upload the selected **actual current local files**, not a presumed equivalently named old ZIP, to the **BARAM-SR-StrongSORT** repository. Never upload them to the unrelated Jackal project.
 
-## Known benchmark issue
+## Verification checklist
 
-The 2026-11-06 TrackEval run aborted because `SEQMAP_FILE` was interpreted as a list where a path string was expected. The console log preserved performance counters but not valid TrackEval metrics from that failed evaluation. See `PROJECT_REPORT_KO.md`.
+1. Compare source checksums and existing modifications; preserve source and third-party attribution.
+2. Exclude datasets, trained model weights, videos, performance output folders, private tokens, and venvs.
+3. Validate Python syntax and run relevant unit tests.
+4. Perform short GPU smoke tests with the actual YOLO26x + OSNet checkpoints.
+5. State exact MOT split, timing boundaries and TrackEval configuration.
+6. Reconcile differing historical FPS results before final scientific publication.
+
+The November 6 TrackEval execution produced an error due to a sequence-map argument type; the reported HOTA/IDF1/MOTA comparisons should be independently matched to successful TrackEval output before being claimed as reproducible results.
